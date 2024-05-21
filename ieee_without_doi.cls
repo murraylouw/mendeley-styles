@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>IEEE (no DOI)</title>
     <id>http://www.zotero.org/styles/ieee</id>
@@ -45,7 +44,7 @@
     <category field="engineering"/>
     <category field="generic-base"/>
     <summary>IEEE style as per the 2021 guidelines, V 01.29.2021.</summary>
-    <updated>2024-05-21T08:44:33+00:00</updated>
+    <updated>2024-05-21T09:17:53+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -212,9 +211,6 @@
           </if>
         </choose>
       </if>
-      <else-if match="any" variable="DOI">
-        <text variable="DOI" prefix=" doi: " suffix="."/>
-      </else-if>
       <else-if variable="URL">
         <group delimiter=". " prefix=" " suffix=". ">
           <group delimiter=": ">
@@ -311,7 +307,6 @@
             <text macro="issued"/>
             <text macro="status"/>
           </group>
-          <text macro="access"/>
         </if>
         <else-if type="paper-conference speech" match="any">
           <group delimiter=", " suffix=".">
